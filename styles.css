@@ -5,7 +5,7 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 65%;
+
 }
 
 :root {
@@ -35,18 +35,15 @@
 main {
   background-image: url('./img/logo.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .cards-container {
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -60,7 +57,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   border-radius: 15px;
-  box-shadow: 5px 10px black;
+  box-shadow: 1px 2px #cbcbcb;
 }
 
 .card figure {
@@ -73,7 +70,7 @@ main {
   height: 200px;
   grid-column: 1fr;
   border-radius: 20%;
-  box-shadow: 3px 5px black;
+
 }
 
 .card-info {
